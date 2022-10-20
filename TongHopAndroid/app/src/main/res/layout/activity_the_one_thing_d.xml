@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TheOneThingD"
+    android:background="@drawable/gradientbackground">
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/theonething1" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="The one thing"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tacgia2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Tác giả: Gary Keller và Jay Papasan"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_below="@+id/tacgia2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_1">
+
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tacgia2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:lineHeight="30sp"
+            android:paddingBottom="20dp"
+            android:text="Nếu Điều ý nghĩa nhất trong từng khoảnh khắc cuộc đời (có tên tiếng Anh là The One Thing) không nằm trong danh sách những cuốn sách hay giúp thay đổi cuộc đời bạn thì quả thật là một thiếu sót nghiêm trong. Đây là cuốn sách có tầm ảnh hưởng và đã làm thay đổi cuộc đời của hàng triệu người.
+
+Với sự phân tích kỹ lưỡng của Gary Keller và Jay Papasan, cuốn sách chỉ ra được những điều quan trọng thực sự mà chúng ta nên làm trong cuộc đời là gì, để rồi từ đó có thể vạch ra những kế hoạch hoàn hảo trong công việc, gia đình và bản nhân.  Đây là quyển sách rất có ý nghĩa đối với những người mới bước chân vào kinh doanh hay khởi động doanh nghiệp với thông điệp là nếu muốn thành công thì chúng ta nên tập trung vào một điều quan trọng nhất."
+            android:textSize="17sp"
+            android:textStyle="normal" />
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu"/>
+
+</RelativeLayout>

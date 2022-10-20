@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    tools:context=".Profile">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="0dp"
+        android:scaleX="2"
+        android:scaleY="1"
+        android:src="@drawable/wall"/>
+
+    <ImageView
+        android:id="@+id/avt"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="152dp"
+        android:background="@drawable/avtar_image"
+        android:clipToOutline="true"
+        android:src="@drawable/bfl" />
+
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Nguyễn Hải Luân"
+        android:textColor="#F8F8FF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fname"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto"
+        android:text="&#64;Hailuan609"
+        android:textColor="#D3D3D3"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto"
+        android:text="info"
+        android:textColor="#F5F5F5"
+        android:textSize="17sp" />
+
+    <FrameLayout
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="3dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/gradient_2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Đang mượn"
+            android:textColor="#C6E2FF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#97FFFF"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="310dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/gradient_2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Tổng mượn"
+            android:textColor="#C6E2FF" />
+
+        <TextView
+            android:id="@+id/tongmuon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#97FFFF"
+            android:textSize="20sp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="310dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/pro_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Tổng trả"
+            android:textColor="#C6E2FF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#97FFFF"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="360dp"
+        android:layout_height="83dp"
+        android:layout_below="@+id/frame1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/gradien_scr">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center|left"
+            android:scaleType="centerInside"
+            android:src="@drawable/calendar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:gravity="center"
+            android:text="Ngày sinh"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center|right"
+            android:text="06/09/2002"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame3"
+        android:layout_width="360dp"
+        android:layout_height="83dp"
+        android:layout_below="@+id/frame2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gradien_scr">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center|left"
+            android:scaleType="centerInside"
+            android:src="@drawable/mail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:gravity="center"
+            android:text="Email"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center|right"
+            android:text="nguyenhailuan609@gmail.com"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="143dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/frame3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF3B89"
+        android:text="Đăng Xuất"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu" />
+</RelativeLayout>

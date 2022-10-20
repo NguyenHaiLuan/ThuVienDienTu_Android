@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DacNhanTam"
+    android:background="@drawable/gradientbackground">
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/dacnhantam" />
+
+    <TextView
+        android:id="@+id/title5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Đắc nhân tâm"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tacgia5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Tác giả: Dale Carnegie"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_below="@+id/tacgia5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_1">
+
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tacgia5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:lineHeight="30sp"
+            android:paddingBottom="20dp"
+            android:text="Đắc Nhân Tâm của tác giả Dale Carnegie được mệnh danh là một trong những quyển sách hay nhất, bán chạy nhất và có tầm ảnh hưởng nhất mọi thời đại. Đây thực sự  là một cuốn sách tuyệt với mang lại nhiều giá trị cho người đọc về nghệ thuật thu phục lòng người khiến cho những người xung quanh phải khâm phục và yêu mến mình.
+
+Nội dung xuyên suốt quyển sách là những bài học thực tế về cách cư xử, thái độ cũng như kỹ năng giao tiếp để có thể phát triển bản thân lên một taamf cao mới. Cuốn sách này phù hợp với tất cả mọi lứa tuổi, bạn đừng bỏ qua Đắc Nhân Tâm để biết sống tử tế hơn giúp cuộc đời có ý nghĩa hơn nhé."
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu"/>
+</RelativeLayout>

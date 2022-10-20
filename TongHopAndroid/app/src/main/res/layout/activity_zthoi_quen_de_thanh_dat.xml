@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZThoiQuenDeThanhDat"
+    android:background="@drawable/gradientbackground">
+
+    <ImageView
+        android:id="@+id/image7"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/thoiquenthanhdat" />
+
+    <TextView
+        android:id="@+id/title7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="7 Thói quen để thành đạt"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tacgia7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Tác giả: Stephen R. Covey"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_below="@+id/tacgia7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_1">
+
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tacgia5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:lineHeight="30sp"
+            android:paddingBottom="20dp"
+            android:text="7 thói quen để thành đạt là một trong những quyển sách hay nổi tiếng nhất trên thế giới đượcc rất nhiều người yêu thích. Quyển sách đước sáng tác bởi Stephen R. Covey – một trong những những chuyên gia về lĩnh vực phát triển năng lực lãnh đạo và kiến tạo văn hóa và là 1 trong 25 người có ảnh hưởng nhất nước Mỹ. Được xuất bản năm 1989, nhưng đến nay những giá trị, những bài học quý giá từ cuốn sách vẫn còn vẹn nguyên trong lòng độc giả.
+
+Với phong cách viết sách tỉ mỉ đến từng chi tết, “7 thói quen để thành đạt” đã giúp người đọc hiểu ra được bản chất thật sự của sự việc và những nguyên nhân sâu xa nhất của vấn đề, từ đó, ông hướng dẫn người đọc thay đổi cái bản chất sâu xa đó để con người ta trở nên tốt đẹp hơn."
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu"/>
+
+</RelativeLayout>

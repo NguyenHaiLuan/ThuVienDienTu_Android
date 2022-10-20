@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoToiXinMotVe"
+    android:background="@drawable/gradientbackground">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/chotoixin"/>
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cho tôi xin một vé đi tuổi thơ"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image1"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tacgia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tác giả: Nguyễn Nhật Ánh"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title1"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_below="@+id/tacgia1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_1">
+
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tacgia1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="20dp"
+            android:lineHeight="30sp"
+            android:text="Ngay sau khi nhà xuất bản Trẻ ấn hành lần đầu tiên, “Cho tôi xin một vé đi tuổi thơ” đã là cuốn sách bán chạy nhất Việt Nam năm 2008. Cho tôi xin một vé đi tuổi thơ không chỉ là cuốn sách bán chạy nhất mà còn được bạn đọc báo Người lao động bầu chọn là cuốn sách hay nhất năm. Cuốn sách được trao giải Vàng sách hay của Hội nhà văn Việt Nam năm 2009, được nhận giải thưởng văn học ASEAN năm 2010. Đến quý III năm 2012 cuốn sách đã tái bản đến lần thứ 31 với số lượng kỉ lục hơn 100.000 bản in.
+Điều gì đã khiến một cuốn sách nhỏ được yêu thích và giành được nhiều giải thưởng đến như vậy? Xin mời bạn đọc hãy cùng khám phá 12 chương của cuốn sách, với các chương truyện như: Tóm lại là đã hết một ngày, bố mẹ tuyệt vời, buồn ơi là sầu, tôi ngoan trong bao lâu và cuối cùng là chuyến tàu không có người xoát vé. Những cái tên như từng cánh cửa dẫn bạn trở về với thế giới của tuổi thơ."
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu"/>
+
+</RelativeLayout>

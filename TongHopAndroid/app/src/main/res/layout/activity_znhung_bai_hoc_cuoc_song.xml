@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZNhungBaiHocCuocSong"
+    android:background="@drawable/gradientbackground">
+
+    <ImageView
+        android:id="@+id/image8"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/nhungbaihoc" />
+
+    <TextView
+        android:id="@+id/title8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Những bài học cuộc sống"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tacgia8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Tác giả: Hal Urban"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_below="@+id/tacgia8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_1">
+
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tacgia8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:lineHeight="30sp"
+            android:paddingBottom="20dp"
+            android:text="Những bài học cuộc sống là cuốn sách hay với nội dung là 20 bài học có giá trị được đúc kết từ kinh nghiệm sống của người thầy thông thái -  tiến sĩ giáo dục tâm lý Hal Urban. Đây là cuốn sách luôn nằm trong danh sách những cuốn sách bán chạy nhất và được nhiều người yêu thích nhất trên thế giới.
+Đây là cuốn sách thực sự rất cần thiết với các bạn trẻ, vì ngoài những bài học ý nghĩa trong cuộc sống cuốn sách còn dạy các kỹ năng giúp bạn có được cách nhìn nhận đúng đắn trong công việc và cuộc sống, từ đó có thể  đưa ra những quyết định và lựa chọn hợp lý, đúng đắn hơn."
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu"/>
+
+</RelativeLayout>

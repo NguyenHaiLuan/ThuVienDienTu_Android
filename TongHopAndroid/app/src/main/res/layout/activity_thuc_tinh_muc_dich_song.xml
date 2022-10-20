@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThucTinhMucDichSong"
+    android:background="@drawable/gradientbackground">
+
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/thuctinh" />
+
+    <TextView
+        android:id="@+id/title6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thức tỉnh mục đích sống"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image6"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tacgia6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Tác giả: Eckhart Tolle"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_below="@+id/tacgia6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_1">
+
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tacgia5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:lineHeight="30sp"
+            android:paddingBottom="20dp"
+            android:text="Thức tỉnh mục đích sống của tác giả Eckhart Tolle được mệnh danh là một cuốn sách hay làm bừng tỉnh cả thế giới. Quyển sách mang lại cho chúng ta cái nhìn tổng hợp nhất về con người.
+Hiện nay, xã hội ngày càng phát triển, con người ngày càng tôn sùng khoa học và ngày càng tự cao tự đại nên tự cho mình quyền sinh sát, phá hoại cải tạo tự nhiên… mà họ không hệ biết rằng nếu chúng ra càng cố phát triển thì trái đất càng giảm khả năng tồn tại. Nội dung cuốn sách không những giúp người đọc thay đổi nhận thức về bản thân mà còn giúp thức tỉnh người đọc rằng nếu muốn tồn tại và phát triển theo thời gian thì chúng ta nên tìm về với bản thể và mục đích cao cả của loài người."
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu"/>
+
+</RelativeLayout>

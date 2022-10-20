@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DamNghiLonD"
+    android:background="@drawable/gradientbackground">
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/damnghilon" />
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Dám nghĩ lớn"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tacgia4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Tác giả: David J. Schwartz"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_below="@+id/tacgia4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_1">
+
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tacgia4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="20dp"
+            android:lineHeight="30sp"
+            android:text="Dám nghĩ lớn có tên tiếng Anh là The Magic of Thinking Big là một quyển sách hay đã làm thay đổi cuộc đời của rất nhiều người một cách kỳ diệu nhất. Cuốn sách được sáng tác bởi nhà văn David Joseph Schwartz đồng thời vừa là một vị giáo sư Đại học tại bang Georgia – Mỹ.
+
+Với nhiều kinh nghiệm quý báu đúc kết từ cuộc sống, David Joseph Schwartz đã tạo nên một kiệt tác nói về tầm quan trọng của việc nghĩ lớn,  khi bạn nghĩ lớn và đặt mục tiêu lớn, nó tạo áp lực cho bạn nhưng  đồng thời nó cũng tạo động lực giúp bạn hành động mạnh mẽ hơn, đi tới thành công một cách dễ dàng hơn.
+
+Bài học mà tác giả muốn gửi gắm qua tác phẩm này đó là: chỉ cần có sức mạnh và niềm tin bạn sẽ vượt qua được tất cả."
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu"/>
+
+</RelativeLayout>

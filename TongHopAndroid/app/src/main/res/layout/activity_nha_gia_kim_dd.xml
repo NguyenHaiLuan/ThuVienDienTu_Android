@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NhaGiaKimDD"
+    android:background="@drawable/gradientbackground">
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/nhagiakim" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Nhà giả kim"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tacgia3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Tác giả: Paulo Coelho "
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_below="@+id/tacgia3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_1">
+
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tacgia3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:lineHeight="30sp"
+            android:paddingBottom="20dp"
+            android:text="Một trong những cuốn sách hay giúp thay đổi cuộc đời mà bạn không thể không nhắc đến đó là Nhà giả Kim của tác giả Paulo Coelho. Tác phẩm nói về hành trình đi tìm vận mệnh và chinh phục ước mơ của chàng trai Santiago. Với những câu chuyện sâu sắc được lồng ghép trong tác phẩm giúp người đọc có thể hiểu rõ hơn về tình yêu, về bản chất con người, về lẽ sống, về ước mơ, ...
+
+Thông điệp mà Paulo Coelho muốn gửi đến độc giả đó chính là chỉ cần chúng ta có nỗ lực, có đam mê thì mọi thứ xung quanh chúng ta sẽ trở nên tốt đẹp hơn và chúng ta sẽ thành công hơn. Ngoài ra, khi đọc xong quyển sách này bạn sẽ hiểu được con đường mà bạn đang đi có đúng không và giúp bạn nhận định rõ được những mục tiêu trong tương lai mà bạn cần hướng đến."
+            android:textSize="17sp"
+            android:textStyle="normal" />
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu"/>
+
+</RelativeLayout>

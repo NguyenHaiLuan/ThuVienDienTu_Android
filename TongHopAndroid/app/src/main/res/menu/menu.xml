@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/back"
+        android:title="Trở về"
+        android:icon="@drawable/ic_back"/>
+
+    <item android:id="@+id/profile"
+        android:title="Tôi"
+        android:icon="@drawable/ic_me"/>
+
+    <item android:id="@+id/mybooks"
+        android:title="Sách của tôi"
+        android:icon="@drawable/ic_list"/>
+
+</menu>

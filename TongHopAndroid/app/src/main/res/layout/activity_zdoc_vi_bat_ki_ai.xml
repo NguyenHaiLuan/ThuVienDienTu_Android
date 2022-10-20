@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZDocViBatKiAi"
+    android:background="@drawable/gradientbackground">
+
+    <ImageView
+        android:id="@+id/image9"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/docvibatkiai" />
+
+    <TextView
+        android:id="@+id/title9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Đọc vị bất kỳ ai"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tacgia9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Tác giả: David J.Lieberman"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_below="@+id/tacgia9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_1">
+
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tacgia9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:lineHeight="30sp"
+            android:paddingBottom="20dp"
+            android:text="Đọc vị bất kỳ ai là một quyển sách hay về vô cùng hữu ích về tâm lý, giúp bạn có thể biết được những suy nghĩ từ bên trong nội âm của người khác và quan trọng hơn đó là giúp bạn thiết lập cuộc chơi để mình không bao giờ là người thua cuộc.
+
+Quyển sách được sáng tác bởi David J.Lieberman – một trong những chuyên gia hàng đầu trong lĩnh vực nghiên cứu về hành vi và các mối quan hệ của con người. Với từ ngữ logic, sự nhạy bén trong từng suy nghĩ và cử chỉ, cùng với những ví dụ chân thật lại vô cùng cuốn hút khiến người đọc hứng thú hơn qua từng trang sách."
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu"/>
+</RelativeLayout>

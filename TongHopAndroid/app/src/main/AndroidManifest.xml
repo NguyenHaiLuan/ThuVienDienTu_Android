@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="nhl69.luansapp.tonghopandroid">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppTongHop"
+        tools:targetApi="31">
+        <activity
+            android:name=".ZDocViBatKiAi"
+            android:exported="false" />
+        <activity
+            android:name=".ZNhungBaiHocCuocSong"
+            android:exported="false" />
+        <activity
+            android:name=".ZThoiQuenDeThanhDat"
+            android:exported="false" />
+        <activity
+            android:name=".ThucTinhMucDichSong"
+            android:exported="false" />
+        <activity
+            android:name=".NhaGiaKimDD"
+            android:exported="false" />
+        <activity
+            android:name=".TheOneThingD"
+            android:exported="false" />
+        <activity
+            android:name=".DamNghiLonD"
+            android:exported="false" />
+        <activity
+            android:name=".ChoToiXinMotVe"
+            android:exported="false" />
+        <activity
+            android:name=".NhaGiaKim"
+            android:exported="false" />
+        <activity
+            android:name=".ChoToiXin"
+            android:exported="false" />
+        <activity
+            android:name=".DamNghiLon"
+            android:exported="false" />
+        <activity
+            android:name=".TheOneThing"
+            android:exported="false" />
+        <activity
+            android:name=".DacNhanTam"
+            android:exported="false" />
+        <activity
+            android:name=".List"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Begin"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
